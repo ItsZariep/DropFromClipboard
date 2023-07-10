@@ -1,0 +1,30 @@
+<!-- Programmed by ItzSelenux -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DropFromClipboard</title>
+		<script src="js.js"></script>
+		<link rel="stylesheet" type="text/css" href="css.css">
+	</head>
+	<body>
+
+		<button id="show-image">Show Image</button>
+		<br>
+		<p>Due to Chrome security limitations, it is not possible to load the image without a button.</p>
+
+		<label for="dark-mode-checkbox">Dark Mode:</label>
+			<label class="switch">
+			<input type="checkbox" id="dark-mode-checkbox">
+			<span class="slider"></span>
+		</label><br><br>
+
+		<label for="history-size">Hist Size:</label>
+		<input type="number" id="history-size" min="1" max="64" value="10">
+
+		<label for="history-size">Img Size (%):</label>
+		<input type="number" id="img-size" min="10" max="90" value="25">
+
+		<div id="image-container"></div>
+
+	</body>
+</html>

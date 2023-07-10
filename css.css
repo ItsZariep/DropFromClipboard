@@ -1,0 +1,139 @@
+/* Programmed by ItzSelenux */
+body
+{
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+}
+
+button
+{
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	cursor: pointer;
+	width: 333px;
+}
+	button:hover
+	{
+		background-color: #45a049;
+	}
+
+p
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+label
+{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+img
+{
+	border: 3px solid #ffffff;
+	margin: 3px;
+	border-radius: 6px;
+}
+
+
+.switch
+{
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 24px;
+}
+	.switch input
+	{
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+	input:checked + .slider
+	{
+		background-color: #666666;
+	}
+	input:checked + .slider:before
+	{
+		transform: translateX(26px);
+	}
+	input[type="number"]
+	{
+		width: 50px;
+		padding: 5px;
+		border-radius: 3px;
+		border: 1px solid #ccc;
+		text-indent: 17px;
+		height:30px;
+		background-color: transparent;
+	}
+		input[type="number"]::-webkit-inner-spin-button,
+		input[type="number"]::-webkit-outer-spin-button 
+		{
+			height: 61px;
+			width: 33px;
+			transform: rotate(90deg) translateY(20px) translateX(15px);
+			opacity: 1;
+			background-color: transparent;
+		}
+
+.slider
+{
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: .4s;
+	border-radius: 34px;
+}
+	.slider:before
+	{
+		position: absolute;
+		content: "";
+		height: 16px;
+		width: 16px;
+		left: 9px;
+		bottom: 4px;
+		background-color: white;
+		transition: .4s;
+		border-radius: 50%;
+	}
+
+
+
+.dark-mode
+{
+	background-color: #2a2a2a;
+	color: white;
+}
+	.dark-mode input[type="number"]
+	{
+	text-indent: 17px;
+	height:30px;
+	background-color: transparent;
+	color: #ffffff;
+	}
+		.dark-mode input[type="number"]::-webkit-inner-spin-button,
+		.dark-mode input[type="number"]::-webkit-outer-spin-button
+		{
+			height: 61px;
+			width: 33px;
+			transform: rotate(90deg) translateY(20px) translateX(15px);
+			opacity: 1;
+			background-color: transparent;
+		}
+
+#image-container
+{
+	margin-top: 6px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
