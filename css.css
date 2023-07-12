@@ -73,7 +73,7 @@ img
 		background-color: transparent;
 	}
 		input[type="number"]::-webkit-inner-spin-button,
-		input[type="number"]::-webkit-outer-spin-button 
+		input[type="number"]::-webkit-outer-spin-button
 		{
 			height: 61px;
 			width: 33px;
