@@ -1,4 +1,4 @@
-/* Programmed by ItzSelenux */
+/* Programmed by ItsZariep */
 body
 {
 	font-family: Arial, sans-serif;
@@ -136,4 +136,10 @@ img
 	margin-top: 6px;
 	border: 1px solid #ccc;
 	padding: 10px;
+	max-width: 300px;
+}
+
+#image-container > *
+{
+  width: 100%;
 }
