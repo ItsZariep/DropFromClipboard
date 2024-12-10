@@ -4,6 +4,14 @@
 "description": "Show image from clipboard to Drop into a webpage",
 "permissions": ["clipboardRead"],
 
+"browser_specific_settings":
+{
+	"gecko":
+	{
+		"id": "dropfromclipboard@itszariep"
+	}
+},
+
 "action":
 {
 	"default_popup": "main.html"
