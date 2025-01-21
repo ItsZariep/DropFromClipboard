@@ -1,0 +1,37 @@
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+<title>DropFromClipboard Help / FAQ</title>
+</head>
+<body>
+<h1 id="dropfromclipboard-help-faq">DropFromClipboard Help / FAQ</h1>
+<h2 id="how-to-use">How To use</h2>
+<ol type="1">
+<li>Copy an image (not necessary from the browser).</li>
+<li>Open DropFromClipboard UI and click the “Add Image” Button)</li>
+<li>The picture will be saved in the DropFromClipboard local IndexedDB
+(if you delete the extension or their local data, all the images will be
+deleted)</li>
+<li>Now you can drag and drop from drop from clipboard to the
+website</li>
+</ol>
+<h2 id="website-ignores-the-image">Website ignores the image</h2>
+<p>This is due to website internal logic, DropFromClipboard show images
+as raw <code>data:image</code> because is the simplest implementation to
+save the images using IndexedDB, if the website expects an actual image
+or not handle raw data, it will ignore the image, sorry for the
+incovenience</p>
+<h2 id="supported-formats">Supported formats</h2>
+<p>DropFromClipboard supports any <code>image/png</code> supported by
+the user browser, common formats like PNG, JPG or WEBP works properly,
+please read your browser documentation for more information.</p>
+<h2 id="i-want-to-store-too-many-images">I want to store too many
+images</h2>
+<p>In theory, there is not problem and may depend on your device storage
+(not a problem in any common computer).</p>
+<p>Talking about the popup size (if using Browser Extension), the
+browser will display a scrollbar (native behavior, not programmed by me)
+when the viewport is considered too big, however, in very small screen
+this may work wrong.</p>
+</body>

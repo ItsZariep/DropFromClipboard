@@ -1,16 +1,25 @@
+:root
+{
+	--fg: #1a1a1a;
+	--bg: #eee;
+	--ac: #4ca650
+}
+
 /* Programmed by ItsZariep */
 body
 {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 20px;
+		background-color: var(--bg);
+		color: var(--fg);
 }
 
 button
 {
 	padding: 10px 20px;
 	font-size: 16px;
-	background-color: #4CAF50;
+	background-color: #4ca650;
 	color: white;
 	border: none;
 	cursor: pointer;
@@ -18,13 +27,33 @@ button
 }
 	button:hover
 	{
-		background-color: #45a049;
+		background-color: #26702a;
 	}
 
 p
 {
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+a
+{
+	color: #1a1a1a;
+	margin-top: 5px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+	font-weight: bold;
+	border: 2px solid;
+}
+
+a:hover
+{
+	background-color: #4ca650;
 }
 
 label
@@ -35,11 +64,10 @@ label
 
 img
 {
-	border: 3px solid #ffffff;
+	border: 3px solid #1a1a1a;
 	margin: 3px;
 	border-radius: 6px;
 }
-
 
 .switch
 {
@@ -79,7 +107,6 @@ img
 			width: 33px;
 			transform: rotate(90deg) translateY(20px) translateX(15px);
 			opacity: 1;
-			background-color: transparent;
 		}
 
 .slider
@@ -107,39 +134,47 @@ img
 		border-radius: 50%;
 	}
 
-
-
-.dark-mode
-{
-	background-color: #2a2a2a;
-	color: white;
-}
-	.dark-mode input[type="number"]
-	{
-	text-indent: 17px;
-	height:30px;
-	background-color: transparent;
-	color: #ffffff;
-	}
-		.dark-mode input[type="number"]::-webkit-inner-spin-button,
-		.dark-mode input[type="number"]::-webkit-outer-spin-button
-		{
-			height: 61px;
-			width: 33px;
-			transform: rotate(90deg) translateY(20px) translateX(15px);
-			opacity: 1;
-			background-color: transparent;
-		}
-
 #image-container
 {
 	margin-top: 6px;
-	border: 1px solid #ccc;
+	border: 1px solid #1a1a1a;
+	border-radius: 9px;
 	padding: 10px;
 	max-width: 300px;
 }
 
 #image-container > *
 {
-  width: 100%;
+	width: 100%;
 }
+
+.light-mode
+{
+	background-color: var(--bg);
+	color: var(--fg);
+}
+
+.dark-mode
+{
+	background-color: var(--fg);
+	color: var(--bg);
+}
+	.dark-mode input[type="number"]
+	{
+		color: var(--bg);
+	}
+
+	.dark-mode a
+	{
+		color: var(--bg);
+	}
+
+	.dark-mode #image-container
+	{
+		border: 3px solid var(--bg);
+	}
+
+	.dark-mode img
+	{
+		border: 3px solid var(--bg);
+	}

@@ -170,6 +170,7 @@ function init()
 	darkModeCheckbox.addEventListener('change', function ()
 	{
 		body.classList.toggle('dark-mode', this.checked);
+		body.classList.toggle('light-mode', this.unchecked);
 	});
 
 	const button = document.getElementById('show-image');
